@@ -3,13 +3,31 @@ __author__ = 'Dellbby'
 #3 Strings (Strings & Variables below created with raw_input to get input from)
 fullname = raw_input ("Enter your Name: ")
 food = raw_input ("Enter your favorite food: ")
-age = raw_input ("Enter your age: ")
+age = raw_input ("Enter a number between 1 and 10: ")
 color = raw_input ("Enter your favorite color: ")
 princess = raw_input ("Enter a Disney Princess: ")
 
 #Array
 employees = ["Ken", "Tilly", "Lizzy"]
-employees.append("Bob")
+
+#Numbers
+
+
+
+
+#Conditional Statements-----------------------------------------------------------------------------------------
+if age < 5:
+    result1 = "Oh, I apologize, she won't be able to ride on the Haunted mansion ride."
+else:
+    result1 = "Wonderful, she is old enough to sit on the ride."
+
+
+if age < 5:
+    result2 = "She won't be able to go on our Drop of Doom rollercoaster either. "
+else:
+    result2 = "She is old enough to go on our Drop of Doom rollercoaster. "
+
+
 
 #Story!!!
 story = '''
@@ -20,5 +38,7 @@ I see your favorite food is {food}, great! You can find {food} in our food court
 At 3:00PM, {princess} will come out for pictures, so you will be able to catch her in Toon Town as well.
 We have a few new employees that will be giving tours in our new Harry Potter themed maze. Be sure to talk
 to {employees[0]} if you would like to sign up for the tour because tickets sell out quick!
+After seeing Princess {princess}, I suggest going to the haunted mansion ride.
+I see here your younger sibling is {age} years old. {result1} I also want to let you know that {result2}
 '''
 print story.format(**locals())
