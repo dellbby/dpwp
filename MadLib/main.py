@@ -21,6 +21,11 @@ def add(time,gap):
 hour = add (3,2)
 
 
+#Dictionary
+reaction = dict()
+reaction = {"Sad":"Oh no", "Happy":"Yay!!"}
+
+
 #Conditional Statements - If/Else
 if age > 5:
     result1 = "Oh, I apologize, she won't be able to ride on the Haunted mansion ride."
@@ -31,6 +36,11 @@ if age > 5:
     result2 = "She won't be able to go on our Drop of Doom rollercoaster either. "
 else:
     result2 = "She is old enough to go on our Drop of Doom rollercoaster. "
+
+if age > 5:
+	result3 = reaction["Sad"]
+else:
+    result3 = reaction["Happy"]
 
 
 #loop
@@ -52,7 +62,7 @@ You will have a {gap} hour gap where you can visit some of our new tours.
 We have a few new employees that will be giving tours in our new Harry Potter themed maze. Be sure to talk
 to {employees[0]} if you would like to sign up for the tour because tickets sell out quick!
 After seeing Princess {princess}, around {hour}PM, I suggest going to the haunted mansion ride.
-I see here your younger sibling is {age} years old. {result1} I also want to let you know that {result2}
+I see here your younger sibling is {age} years old. {result3}, {result1} I also want to let you know that {result2}
 Since her favorite color is {color}, we have {color} taffy in our candy store in Mickey & Friends shop.
 I think she would enjoy that! {employees[2]} can take you both there.
 '''
