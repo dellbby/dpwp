@@ -13,6 +13,7 @@ employees = ["Ken", "Tilly", "Lizzy"]
 #Numbers
 time = 3
 gap = 2
+opening = 10
 
 #Function
 def add(time,gap):
@@ -53,6 +54,7 @@ while i < 3:
 #Story
 story = '''
 Oh sorry, I didn't see you there, I just got the Frozen soundtrack stuck in my head, it's impossible to get out.
+I didn't even realize it's already {opening}AM!
 Hello {fullname}! My name is {employees[1]}, Welcome to Disneyland Theme Park.
 Here you will find several activities, fun rides, and amazing food.
 First let us start with what you will be eating today.
