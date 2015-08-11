@@ -18,6 +18,7 @@ class Button(object):
         self._color = "0x0000" #protected attribute - 1 underscore
         #self.on_roll_over("Hello!!")
 
+
     def click(self): #click method
         print "I've been clicked"
 
