@@ -1,19 +1,23 @@
+'''
+Delia Akbari
+August 13, 2015
+Simple Form
+DPWP
+'''
 
 class Page(object):
-    def __init__(self):
-        self.title = "Dellbby Photography - Contact Us!"
-        self.css = "css/style.css" #stylesheet
-        self.head = """
+    def __init__(self): #declaring self
+    	self.head = """
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>{self.title}</title>
-        <link href = "{self.css}" rel="stylesheet" type="text/css"/>
+        <title>Dellbby Photography - Contact Us</title>
+        <link href = "css/style.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         """
 
-        self.body = """
+        self.form = """
         <header>
         <h1>Need a Photographer? Contact us!</h1>
         <h2>Fill out our quick contact form:</h2>
@@ -21,7 +25,8 @@ class Page(object):
         <div class="form"><form method="GET" action="">
         <label>First Name: </label><input type="text" name="fname" /><br>
         <label>Last Name: </label><input type="text" name="lname" /><br>
-        <label>Address: </label><input type="text" name="address" /><br>
+        <label>Last Name: </label><input type="text" name="lname" /><br>
+        <label>Phone Number: </label><input type="text" name="number" /><br>
         <label>City: </label><input type="text" name="city" /><br>
         <label>State:</label><select name="state"><br>
         <option value=" " > Please choose a state</option>
@@ -84,12 +89,11 @@ class Page(object):
         <label></label><input type="submit" class="button" value="submit" /></div>
         """
 
+        self.result = """
+        Thank you for contacting us, below is a confirmation of what you entered.
+        We should follow up with you shortly """
+
         self.close = """
     </body>
 </html>
         """
-
-    def print_out(self):
-        all = self.head + self.body + self.close
-        all = all.format(**locals())
-        return all
