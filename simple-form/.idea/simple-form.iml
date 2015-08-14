@@ -4,8 +4,5 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="classes-html" />
-    <orderEntry type="module" module-name="data-objects" />
-    <orderEntry type="module" module-name="simple-form" />
   </component>
 </module>
