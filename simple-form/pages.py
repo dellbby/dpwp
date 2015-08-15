@@ -7,24 +7,27 @@ DPWP
 
 class Page(object):
     def __init__(self): #declaring self
+        #start Doctype html code - header, form,result,etc.
     	self.head = """
 <!DOCTYPE HTML>
 <html>
     <head>
         <title>Dellbby Photography - Contact Us</title>
         <link href = "css/style.css" rel="stylesheet" type="text/css"/>
+        <center><img src="images/banner.png"></center>
     </head>
     <body>
         """
 
         self.form = """
         <header>
+
         <h1>Need a Photographer? Contact us!</h1>
-        <h2>Fill out our quick contact form:</h2>
+
         </header>
         <div class="form"><form method="GET" action="">
+        <h2>Fill out our quick contact form:</h2>
         <label>First Name: </label><input type="text" name="fname" /><br>
-        <label>Last Name: </label><input type="text" name="lname" /><br>
         <label>Last Name: </label><input type="text" name="lname" /><br>
         <label>Phone Number: </label><input type="text" name="number" /><br>
         <label>City: </label><input type="text" name="city" /><br>
@@ -83,17 +86,29 @@ class Page(object):
 		<option value="WY">Wyoming</option></select>
         <br><label>Zipcode: </label><input type="text" name="zipcode" /><br>
         <label>Email: </label><input type="text" name="email" /><br>
-
-        <label>Gender:</label><input type="radio" name="sex" value="male">Male<br>
-        <input type="radio" name="sex" value="female">Female<BR>
+        <label>Prefered method of contact:</label><input type="radio" name="contact" value="email">Email<br>
+        <input type="radio" name="contact" value="phone">Phone<BR><BR>
+        <label>Reason:</label><select name="reason"><br>
+		<option value=" " >Please choose reason for contact</option>
+		<option value="event">Event</option>
+		<option value="wedding">Wedding</option>
+		<option value="family">Family Portrait</option>
+		<option value="baby">Baby Shower</option>
+		<option value="engagement">Engagement</option></select>
         <label></label><input type="submit" class="button" value="submit" /></div>
         """
 
         self.result = """
-        Thank you for contacting us, below is a confirmation of what you entered.
-        We should follow up with you shortly """
+        <link href = "css/style.css" rel="stylesheet" type="text/css"/>
+
+        <b><h4>Thank you for contacting us! </h4>
+        <h2>Below is a confirmation of what you entered.</h2>
+        <h2>We should follow up with you shortly.</h2></b> <p> <h3>"""
 
         self.close = """
-    </body>
+        <HR>
+
+        <h3><center><a href=#>Home</a> / <a href=http://www.dellbbyphotography.com/#!portraits/c199t>Portraits</a> / <a href=http://www.dellbbyphotography.com/#!projects/cc5q>Events</a> / <a href=http://www.dellbbyphotography.com/#!blog/c70f>Blog</a> / <a href=#>Contact</a>
+    </h3></body>
 </html>
         """
