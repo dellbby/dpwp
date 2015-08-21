@@ -7,6 +7,7 @@ DPWP
 
 import webapp2
 from pages import Page #from package import class
+from library import Grades
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
