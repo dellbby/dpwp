@@ -7,14 +7,14 @@ DPWP
 
 class Grades(object):
     def __init__(self):
-        self.__fname = ''
+        self.__name = ''
 
     @property
-    def fname(self):
-        return self.__fname
+    def name(self):
+        return self.__name
     @name.setter
     def name(self):
-        self.__name = fname
+        self.__name = name
 
         #create array to hold grade info
 
@@ -36,4 +36,4 @@ class Grades(object):
 
     def calc_gpa(g1,g2,g3,g4):
     GPA = (g1,g2,g3,g4)/4.0
-    return GPA
+    return al

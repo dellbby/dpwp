@@ -29,6 +29,7 @@ class Page(object):
         <label>Grade 2</label><input type="text" name="grade2" /><br>
         <label>Grade 3:</label><input type="text" name="grade3" /><br>
         <label>Grade 4:</label><input type="text" name="grade4" /><br>
+
         <label></label><input type="submit" class="button" value="submit" /></div>
         """
 
