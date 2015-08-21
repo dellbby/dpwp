@@ -6,7 +6,7 @@ DPWP
 '''
 
 import webapp2
-from library import Grade
+from library import GetGrades
 from pages import Page
 
 

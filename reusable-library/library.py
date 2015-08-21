@@ -17,7 +17,8 @@ class Grade(object):
         pass
 
     #create array to hold grade info
-class
+class GetGrades(object):
+    def __init__(self):
     #Grade point scale, return number for each grade
     @staticmethod
     def get_grades(grade1, grade2, grade3, grade4):
