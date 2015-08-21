@@ -34,7 +34,7 @@ class Page(object):
         """
 
         self.close = """
-        <HR>
+
 
         </body>
 </html>
