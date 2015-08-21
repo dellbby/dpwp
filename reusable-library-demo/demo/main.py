@@ -35,7 +35,9 @@ class MainHandler(webapp2.RequestHandler):
         p.body = lib.compile_list() + lib.calc_time_span()
         self.response.write(p.print_out())
 
-
+        def main(name, GPA):
+        print "The GPA for", name,"is",GPA
+        return 0
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler)

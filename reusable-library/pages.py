@@ -24,9 +24,7 @@ class Page(object):
         </header>
         <div class="form"><form method="GET" action="">
         <h2>Fill out the form below to find out</h2>
-        <label>First Name: </label><input type="text" name="fname" /><br>
-        <label>Last Name: </label><input type="text" name="lname" /><br>
-        <label>Email: </label><input type="text" name="email" /><br>
+        <label>Name: </label><input type="text" name="name" /><br>
         <label>Grade 1</label><input type="text" name="grade1" /><br>
         <label>Grade 2</label><input type="text" name="grade2" /><br>
         <label>Grade 3:</label><input type="text" name="grade3" /><br>

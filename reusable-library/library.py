@@ -1,10 +1,25 @@
+'''
+Delia Akbari
+August 20, 2015
+Reusable Library
+DPWP
+'''
+
 class Grades(object):
     def __init__(self):
-    #Grade point scale, return number for each grade
-    def scale(self):
-        pass
+        self.__fname = ''
 
-    def GetGrades(grade1, grade2, grade3, grade4):
+    @property
+    def fname(self):
+        return self.__fname
+    @name.setter
+    def name(self):
+        self.__name = fname
+
+        #create array to hold grade info
+
+    #Grade point scale, return number for each grade
+    def get_grades(grade1, grade2, grade3, grade4):
         if [grade1, grade2, grade3, grade4] == 'A' or [grade1, grade2, grade3, grade4] == 'a':
                 [g1, g2, g3, g4] =4
         elif [grade1, grade2, grade3, grade4] == 'B' or [grade1, grade2, grade3, grade4] ==  'b':
@@ -19,16 +34,6 @@ class Grades(object):
                 return 'invalid grade'
         return g1, g2, g3, g4
 
-    def CalcGPA(g1,g2,g3,g4):
-    GPA = (g1,g2,g3,g4)/4
+    def calc_gpa(g1,g2,g3,g4):
+    GPA = (g1,g2,g3,g4)/4.0
     return GPA
-
-    def main(name, GPA):
-    print "The GPA for", name,"is",GPA
-    return 0
-
-    if __name__ == '__main__':
-    name, grade1, grade2, grade3, grade4 = GetName()
-    grades = GetGrades([grade1, grade2, grade3, grade4])
-    GPA = CalcGPA(grades)
-    main(name, GPA)
