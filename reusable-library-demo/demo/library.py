@@ -1,6 +1,6 @@
 class FavoriteMovies(object):
     def __init__(self):
-        self.__movie_list = []
+        self.__movie_list = [] #access modifers  - underscores
         #to do: have array to hold movie info
         #have way to add to array
         #generate list of movies at end
