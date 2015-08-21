@@ -1,13 +1,13 @@
 class Page(object):
     def __init__(self):
         self.__title = "Calculate your GPA"
-        self.css = "css/styles.css"
+        self.css = "css/style.css"
         self.__head = """
 <!DOCTYPE HTML>
 <HTML>
         <HEAD>
                 <TITLE>What is your GPA?</Title>
-                <link href="css/styles.css" rel="stylesheet" type="text/css" />
+                <link href="css/style.css" rel="stylesheet" type="text/css" />
         </head>
         <body>
         """
