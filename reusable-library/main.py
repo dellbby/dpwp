@@ -20,8 +20,8 @@ class MainHandler(webapp2.RequestHandler):
             #stores info we got from form/information input
             fname = self.request.GET['fname'] #firstname input
             lname = self.request.GET['lname'] #lastname input
-
-            #below code is what prints out
+            email = self.request.GET['email'] #email
+             #below code is what prints out
             self.response.write(page_head + page_result + '<h2> Hi ' + fname + ' ' + lname + ",</h2> " + page_close)
         else:
             self.response.write(page_head + page_form + page_close)

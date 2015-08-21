@@ -20,13 +20,17 @@ class Page(object):
 
         self.form = """
         <header>
-            <h1>What is your Grade Point Average?</h1>
+            <h1>What is your High School Grade Point Average?</h1>
         </header>
         <div class="form"><form method="GET" action="">
         <h2>Fill out the form below to find out</h2>
         <label>First Name: </label><input type="text" name="fname" /><br>
         <label>Last Name: </label><input type="text" name="lname" /><br>
-        <label>Email: </label><input type="name" name="email" /><br>
+        <label>Email: </label><input type="text" name="email" /><br>
+        <label>What grade did you get in English? </label><input type="text" name="eng" /><br>
+        <label>What grade did you get in Biology? </label><input type="text" name="bio" /><br>
+        <label>What grade did you get in History? </label><input type="text" name="his" /><br>
+        <label>What grade did you get in Math? </label><input type="text" name="math" /><br>
         <label></label><input type="submit" class="button" value="submit" /></div>
         """
 
