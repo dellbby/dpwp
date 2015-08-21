@@ -14,12 +14,13 @@ class Grade(object):
         return self.__name
     @name.setter
     def name(self):
-        self.__name = name
+        pass
 
     #create array to hold grade info
-
+class
     #Grade point scale, return number for each grade
-    def get_gradess(self,grade1, grade2, grade3, grade4):
+    @staticmethod
+    def get_grades(grade1, grade2, grade3, grade4):
         if [grade1, grade2, grade3, grade4] == 'A' or [grade1, grade2, grade3, grade4] == 'a':
                 [g1, g2, g3, g4] =4
         elif [grade1, grade2, grade3, grade4] == 'B' or [grade1, grade2, grade3, grade4] ==  'b':
@@ -34,6 +35,7 @@ class Grade(object):
                 return 'invalid grade'
         return g1, g2, g3, g4
 
-    def CalcGPA(g1,g2,g3,g4):
-    GPA = (g1,g2,g3,g4)/4
-    return GPA
+    @staticmethod
+    def calc_gpa(g1,g2,g3,g4):
+        gpa = (g1 + g2 + g3 + g4)/4
+        return gpa
