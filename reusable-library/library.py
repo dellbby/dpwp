@@ -2,63 +2,33 @@ class Grades(object):
     def __init__(self):
     #Grade point scale, return number for each grade
     def scale(self):
-        #variables of grades and credits
-        a = 5.0
-        b = 4.0
-        c = 3.0
-        d = 2.0
-        f = 0
+        pass
 
-    if history_grade == 'a':
-        pass
-    elif history_grade == 'b':
-        pass
-    elif history_grade == 'c':
-        pass
-    elif history_grade == 'd':
-        pass
-    elif history_grade == 'f':
-        pass
-    else:
-        print "Your grade is invalid"
+    def GetGrades(grade1, grade2, grade3, grade4):
+        if [grade1, grade2, grade3, grade4] == 'A' or [grade1, grade2, grade3, grade4] == 'a':
+                [g1, g2, g3, g4] =4
+        elif [grade1, grade2, grade3, grade4] == 'B' or [grade1, grade2, grade3, grade4] ==  'b':
+                [g1, g2, g3, g4] =3
+        elif [grade1, grade2, grade3, grade4] == 'C' or [grade1, grade2, grade3, grade4] == 'd':
+                [g1, g2, g3, g4] =2
+        elif [grade1, grade2, grade3, grade4] == 'D' or [grade1, grade2, grade3, grade4] == 'd':
+                [g1, g2, g3, g4] =1
+        elif [grade1, grade2, grade3, grade4] == 'F' or [grade1, grade2, grade3, grade4] == 'f':
+                [g1, g2, g3, g4] =0
+        else:
+                return 'invalid grade'
+        return g1, g2, g3, g4
 
+    def CalcGPA(g1,g2,g3,g4):
+    GPA = (g1,g2,g3,g4)/4
+    return GPA
 
-    if english_grade == 'a':
-        pass
-    elif english_grade == b:
-        pass
-    elif english_grade == c:
-        pass
-    elif english_grade == d:
-        pass
-    elif english_grade == f:
-        pass
-    else:
-        print "Your grade is invalid"
+    def main(name, GPA):
+    print "The GPA for", name,"is",GPA
+    return 0
 
-
-    if math_grade == a:
-        pass
-    elif math_grade == b:
-        pass
-    elif math_grade == c:
-        pass
-    elif math_grade == d:
-        pass
-    elif math_grade == f:
-        pass
-    else:
-        print "Your grade is invalid"
-
-    if biology_grade == a:
-        pass
-    elif biology_grade == b:
-        pass
-    elif biology_grade == c:
-        pass
-    elif biology_grade == d:
-        pass
-    elif biology_grade == f:
-        pass
-    else:
-        print "Your grade is invalid"
+    if __name__ == '__main__':
+    name, grade1, grade2, grade3, grade4 = GetName()
+    grades = GetGrades([grade1, grade2, grade3, grade4])
+    GPA = CalcGPA(grades)
+    main(name, GPA)

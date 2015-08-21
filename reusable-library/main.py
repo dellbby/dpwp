@@ -16,6 +16,12 @@ class MainHandler(webapp2.RequestHandler):
         page_close = p.close
         page_result = p.result
 
+        A = '5'
+        B = '4'
+        C = '3'
+        D = '2'
+        F = '0'
+
         if self.request.GET:
             #stores info we got from form/information input
             fname = self.request.GET['fname'] #firstname input
