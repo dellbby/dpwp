@@ -26,6 +26,7 @@ class Page(object):
         <h2>Fill out the form below to find out</h2>
         <label>First Name: </label><input type="text" name="fname" /><br>
         <label>Last Name: </label><input type="text" name="lname" /><br>
+        <label>Email: </label><input type="name" name="email" /><br>
         <label></label><input type="submit" class="button" value="submit" /></div>
         """
 
