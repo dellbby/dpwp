@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../reusable-library/.idea/reusable-library.iml" filepath="$PROJECT_DIR$/../reusable-library/.idea/reusable-library.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/reusable-library-demo.iml" filepath="$PROJECT_DIR$/.idea/reusable-library-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../simple-form/.idea/simple-form.iml" filepath="$PROJECT_DIR$/../simple-form/.idea/simple-form.iml" />
     </modules>
   </component>
 </project>
