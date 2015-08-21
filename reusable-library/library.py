@@ -21,16 +21,16 @@ class GetGrades(object):
     def __init__(self):
     #Grade point scale, return number for each grade
     @staticmethod
-    def get_grades(grade1, grade2, grade3, grade4):
-        if [grade1, grade2, grade3, grade4] == 'A' or [grade1, grade2, grade3, grade4] == 'a':
+    def get_grades(g1, g2, g3, g4):
+        if [g1, g2, g3, g4] == 'A' or [g1, g2, g3, g4] == 'a':
                 [g1, g2, g3, g4] =4
-        elif [grade1, grade2, grade3, grade4] == 'B' or [grade1, grade2, grade3, grade4] ==  'b':
+        elif [g1, g2, g3, g4] == 'B' or [g1, g2, g3, g4] ==  'b':
                 [g1, g2, g3, g4] =3
-        elif [grade1, grade2, grade3, grade4] == 'C' or [grade1, grade2, grade3, grade4] == 'c':
+        elif [g1, g2, g3, g4] == 'C' or [g1, g2, g3, g4] == 'c':
                 [g1, g2, g3, g4] =2
-        elif [grade1, grade2, grade3, grade4] == 'D' or [grade1, grade2, grade3, grade4] == 'd':
+        elif [g1, g2, g3, g4] == 'D' or [g1, g2, g3, g4] == 'd':
                 [g1, g2, g3, g4] =1
-        elif [grade1, grade2, grade3, grade4] == 'F' or [grade1, grade2, grade3, grade4] == 'f':
+        elif [g1, g2, g3, g4] == 'F' or [gg1, g2, g3, g4] == 'f':
                 [g1, g2, g3, g4] =0
         else:
                 return 'invalid grade'

@@ -25,10 +25,10 @@ class Page(object):
         <div class="form"><form method="GET" action="">
         <h2>Fill out the form below to find out</h2>
         <label>Name: </label><input type="text" name="name" /><br>
-        <label>Grade 1</label><input type="text" name="grade1" /><br>
-        <label>Grade 2</label><input type="text" name="grade2" /><br>
-        <label>Grade 3:</label><input type="text" name="grade3" /><br>
-        <label>Grade 4:</label><input type="text" name="grade4" /><br>
+        <label>Grade 1</label><input type="text" name="g1" /><br>
+        <label>Grade 2</label><input type="text" name="g2" /><br>
+        <label>Grade 3:</label><input type="text" name="g3" /><br>
+        <label>Grade 4:</label><input type="text" name="g4" /><br>
 
         <label></label><input type="submit" class="button" value="submit" /></div>
         """
