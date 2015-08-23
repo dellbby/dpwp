@@ -13,8 +13,9 @@ class Grade(object):
         return self.__name
 
     @name.setter
-    def name(self):
-        self.__name = name
+    def name(self,fname):
+        self.__name = fname
+
 
 
     #create array to hold grade info
