@@ -21,6 +21,8 @@ class MainHandler(webapp2.RequestHandler):
         page_close = p.close
         page_result = p.result
 
+        p.body = g.name() + getg.get_grades()
+
         if self.request.GET:
             #stores info we got from form/information input
             name = self.request.GET['name']  #name
