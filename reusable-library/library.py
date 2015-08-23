@@ -7,14 +7,15 @@ DPWP
 
 class Grade(object):
     def __init__(self):
-        self.__name = ''
 
     @property
     def name(self):
         return self.__name
+
     @name.setter
     def name(self):
-        pass
+        self.__name = name
+
 
     #create array to hold grade info
 class GetGrades(object):

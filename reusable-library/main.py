@@ -6,13 +6,16 @@ DPWP
 '''
 
 import webapp2
-from library import GetGrades
+from library import Grade, GetGrades
 from pages import Page
 
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         p = Page() #instance of page
+        g = Grade #instance of grade class
+        getg = GetGrades #instanace of GetGrades class
+
         page_head = p.head
         page_form = p.form
         page_close = p.close
