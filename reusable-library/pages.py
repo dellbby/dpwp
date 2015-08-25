@@ -25,6 +25,7 @@ class Page(object):
         <div class="form"><form method="GET" action="">
         <h2>Fill out the form below to find out</h2>
         <label>Name: </label><input type="text" name="name" /><br>
+        <label> Age: </label><input type="text" name="age" /><br>
         <label>Grade 1</label><input type="text" name="g1" /><br>
         <label>Grade 2</label><input type="text" name="g2" /><br>
         <label>Grade 3:</label><input type="text" name="g3" /><br>
