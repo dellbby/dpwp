@@ -8,7 +8,7 @@ DPWP
 class Grade(object): #DataObject
     def __init__(self):
         self.__name = ''
-        self.age = '' #make sure age is not less than 16
+        self.__age = '' #make sure age is not less than 16
         self.g1 = ''
         self.g2 = ''
         self.g3 = ''
@@ -27,9 +27,10 @@ class Grade(object): #DataObject
     @property #getter for age
     def age(self):
         pass
+
     @age.setter
     def age(self, a):
-        if a < 16:
+        if a < 16: #checks to make sure student isn't younger than 16
             print "This GPA Calculator won't work for your grade!"
         else:
             self.__age = a
