@@ -21,6 +21,7 @@ class MainHandler(webapp2.RequestHandler):
 
         #INSTANCES:
         fname = Grade()
+        fname.age = ''
         fname.name = ''
         fname.g1 = ''
         fname.g2 = ''
