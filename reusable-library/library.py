@@ -31,12 +31,9 @@ class Grade(object): #DataObject
     @age.setter
     def age(self, a):
         if a < 16: #checks to make sure student isn't younger than 16
-            print "This GPA Calculator won't work for your grade!"
+            print "Error,This GPA Calculator won't work for your grade!"
         else:
             self.__age = a
-
-
-
 
 
 

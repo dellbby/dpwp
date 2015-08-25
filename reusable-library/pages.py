@@ -5,10 +5,12 @@ Reusable Library
 DPWP
 '''
 
-class Page(object):
+class FormPage(object):
     def __init__(self):
+        self.__title = "Welcome!"
+        self.css = "css/style.css"
         #start Doctype html code - header, form,result,etc.
-    	self.head = """
+    	self.__head = """
 <!DOCTYPE HTML>
 <html>
     <head>
@@ -18,7 +20,7 @@ class Page(object):
     <body>
         """
 
-        self.form = """
+        self.body = """
         <header>
             <h1>What is your High School Grade Point Average?</h1>
         </header>
@@ -44,5 +46,32 @@ class Page(object):
         </body>
 </html>
         """
+def print_out(self):
+    all = self.__head + self.body + self.result + self.close
+    return all
 
 
+
+class ResultsPage(object):
+    def __init__(self):
+        self.__title = "Welcome!"
+        self.css = "css/style.css"
+        self.__head = """
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Your Results are in!</title>
+        <link href = "css/styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+
+        <h1> Here are your Results!</h1>
+                """
+        self.body = ""
+        self.close = """
+    </body>
+    </html>
+    """
+def print_out(self):
+    all = self.__head + self.body + self.close
+    return all
