@@ -5,16 +5,19 @@ Reusable Library
 DPWP
 '''
 
-class Grade(object):
+class Grade(object): #DataObject
     def __init__(self):
+        self.__name = ''
+        self.g1 = ''
+        self.g2 = ''
+        self.g3 = ''
+        self.g4 =''
+
 
     @property
     def name(self):
-        return self.__name
+        pass
 
-    @name.setter
-    def name(self,fname):
-        self.__name = fname
 
 
 

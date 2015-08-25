@@ -12,6 +12,25 @@ from pages import Page
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+        #to do list
+        #enter in name
+        #enter in grade 1
+        #enter in grade 2
+        #enter in grade 3
+        #enter in grade 4
+
+        #INSTANCES:
+        fname = Grade()
+        fname.name = ''
+        fname.g1 = ''
+        fname.g2 = ''
+        fname.g3 = ''
+        fname.g4 = ''
+
+
+
+
+
         p = Page() #instance of page
         g = Grade #instance of grade class
         getg = GetGrades #instanace of GetGrades class
