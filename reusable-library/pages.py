@@ -46,9 +46,10 @@ class FormPage(object):
         </body>
 </html>
         """
-def print_out(self):
-    all = self.__head + self.body + self.result + self.close
-    return all
+
+    def print_out(self):
+        all = self.__head + self.body + self.result + self.close
+        return all
 
 
 
@@ -72,6 +73,7 @@ class ResultsPage(object):
     </body>
     </html>
     """
-def print_out(self):
-    all = self.__head + self.body + self.close
-    return all
+
+    def print_out(self):
+        all = self.__head + self.body + self.close
+        return all

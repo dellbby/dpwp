@@ -20,12 +20,13 @@ class MainHandler(webapp2.RequestHandler):
         #enter in grade 4
         gg = GetGrades()
         g = Grade()
+        p = ResultsPage()
+        f = FormPage()
 
-
-        page_head = p.head
-        page_form = p.form
-        page_close = p.close
-        page_result = p.result
+        #page_head = p.head
+        #page_form = p.form
+        #page_close = p.close
+        #page_result = p.result
 
         if self.request.GET:
             #stores info we got from form/information input
@@ -35,15 +36,17 @@ class MainHandler(webapp2.RequestHandler):
             g.g2 = self.request.GET['g2'] #grade2
             g.g3 = self.request.GET['g3'] #grade3
             g.g4 = self.request.GET['g4'] #grade4
+            avg = gg.calc_gpa(g)
+            p.body = """<p>Your average is...""" + str(avg) + """</p>
+            <h1> Bob Saget """ + g.g1 + """</h1>"""
 
-            p = ResultsPage()
-            p.body = gg.calc_gpa() + gg.get_grades()
-             #below code is what prints out
             self.response.write(p.print_out())
+            #p.body = gg.calc_gpa() + gg.get_grades()
+             #below code is what prints out
+            #self.response.write(p.print_out())
             #self.response.write(page_head + page_result + '<h2> Hi ' + g.name + ",</h2><br> <h3>Here are the grades you entered:<BR> " + "<b>Age</b>" + g.age + "<b>Grade 1:</b> " +g.g1 + "<BR> <b>Grade 2:</b>" + g.g2 + "<BR><b> Grade 3:</b>" + g.g3 + "<BR><b>Grade 4:</b> " + g.g4 + page_close)
         else:
-            p = FormPage()
-            self.response.write(p.print_out())
+            self.response.write(f.print_out())
             #self.response.write(page_head + page_form + page_close) - ??
             #print our info on page
 

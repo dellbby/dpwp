@@ -37,28 +37,56 @@ class Grade(object): #DataObject
 
 
 
-
     #create array to hold grade info
 class GetGrades(object):
     def __init__(self):
     #Grade point scale, return number for each grade
-    @staticmethod
-    def get_grades(g1, g2, g3, g4):
-        if [g1, g2, g3, g4] == 'A' or [g1, g2, g3, g4] == 'a':
-                [g1, g2, g3, g4] =4
-        elif [g1, g2, g3, g4] == 'B' or [g1, g2, g3, g4] ==  'b':
-                [g1, g2, g3, g4] =3
-        elif [g1, g2, g3, g4] == 'C' or [g1, g2, g3, g4] == 'c':
-                [g1, g2, g3, g4] =2
-        elif [g1, g2, g3, g4] == 'D' or [g1, g2, g3, g4] == 'd':
-                [g1, g2, g3, g4] =1
-        elif [g1, g2, g3, g4] == 'F' or [gg1, g2, g3, g4] == 'f':
-                [g1, g2, g3, g4] =0
-        else:
-                return 'invalid grade'
-        return g1, g2, g3, g4
+        pass
 
-    @staticmethod
-    def calc_gpa(g1,g2,g3,g4):
-        gpa = (g1 + g2 + g3 + g4)/4
-        return gpa
+
+    def calc_gpa(self, g):
+        if g.g1 == 'A':
+            grade1 = 4.0
+        if g.g1 == 'B':
+            grade1 = 3.0
+        if g.g1 == 'C':
+            grade1 = 2.0
+        if g.g1 == 'D':
+            grade1 = 1.0
+        if g.g1 == 'F':
+            grade1 = 0.0
+
+        if g.g2 == 'A':
+            grade2 = 4.0
+        if g.g2 == 'B':
+            grade2 = 3.0
+        if g.g2 == 'C':
+            grade2 = 2.0
+        if g.g2 == 'D':
+            grade2 = 1.0
+        if g.g2 == 'F':
+            grade2 = 0.0
+
+        if g.g3 == 'A':
+            grade3 = 4.0
+        if g.g3 == 'B':
+            grade3 = 3.0
+        if g.g3 == 'C':
+            grade3 = 2.0
+        if g.g3 == 'D':
+            grade3 = 1.0
+        if g.g3 == 'F':
+            grade3 = 0.0
+
+        if g.g4 == 'A':
+            grade4 = 4.0
+        if g.g4 == 'B':
+            grade4 = 3.0
+        if g.g4 == 'C':
+            grade4 = 2.0
+        if g.g4 == 'D':
+            grade4 = 1.0
+        if g.g4 == 'F':
+            grade4 = 0.0
+        avg = (grade1 + grade2 + grade3 + grade4) / 4
+        return avg
