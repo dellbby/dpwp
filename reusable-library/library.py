@@ -14,14 +14,7 @@ class Grade(object): #DataObject
         self.g3 = ''
         self.g4 =''
 
-#GETTER AND SETTER FOR NAME:
-    @property #getter for Name
-    def name(self):
-        pass
 
-    @name.setter #Setter for Name
-    def name(self, n):
-        self.__name = n #signing parameter here
 
 #GETTER AND SETTER FOR AGE:
     @property #getter for age

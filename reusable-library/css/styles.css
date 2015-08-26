@@ -1,6 +1,6 @@
-body{
-    background-color: #336699;
-
+body {
+    background-image: url("../images/back.png");
+    background-repeat: repeat;
 }
 
 .form {
@@ -19,11 +19,11 @@ h1{
 	text-align:center;
 	text-transform:uppercase;
 	font-size: 25px;
-	font-weight:normal;
+	font-weight:bold;
 	font-family:century gothic;
     padding: 0px 0px 0px 10px;
     display: block;
-    color: #ffb400;
+    color: black ;
 }
 
 h2 {
@@ -51,13 +51,32 @@ h3 {
 h4 {
 	text-align:center;
 	text-transform:uppercase;
-	font-size: 30px;
+	font-size: 40px;
+	line-height:10px;
 	font-weight:bold;
 	font-family:century gothic;
     padding: 0px 0px 0px 10px;
     display: block;
-    color: #FFCCCC;
+    color: black;
 }
+
+h5{	text-align:center;
+	text-transform:uppercase;
+	font-size: 25px;
+	font-weight:normal;
+	font-family:century gothic;
+    padding: 0px 0px 0px 10px;
+    display: block;
+    color: white;
+
+}
+
+hr{
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+	width: 800px;
+	}
 
 input[type="text"], select {
 	border: 1px solid #DADADA;

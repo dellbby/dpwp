@@ -23,6 +23,7 @@ class FormPage(object):
         self.body = """
         <header>
             <h1>What is your High School Grade Point Average?</h1>
+            <HR>
         </header>
         <div class="form"><form method="GET" action="">
         <h2>Fill out the form below to find out</h2>
@@ -66,7 +67,8 @@ class ResultsPage(object):
     </head>
     <body>
 
-        <h1> Here are your Results!</h1>
+        <h4> The results are in!</h4>
+        <HR>
                 """
         self.body = ""
         self.close = """

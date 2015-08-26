@@ -37,8 +37,9 @@ class MainHandler(webapp2.RequestHandler):
             g.g3 = self.request.GET['g3'] #grade3
             g.g4 = self.request.GET['g4'] #grade4
             avg = gg.calc_gpa(g)
-            p.body = """<p>Your average is...""" + str(avg) + """</p>
-            <h1> Bob Saget """ + g.g1 + """</h1>"""
+            p.body = """<div class="form"><h1><p>Hello,<b> """ +g.name + """</b> Here is what you entered:
+            <br>
+            Grade 1:<b> """ +g.g1 + """</b><BR> Grade 2: <b>""" + g.g2 + """</b> <BR>Grade 3:<b> """ +g.g3 + """</b> <BR> Grade 4: <b>"""  + g.g4 + """ <BR></b>We calculated that your GPA is<b> """+ str(avg) + """</b></b></p></div>"""
 
             self.response.write(p.print_out())
             #p.body = gg.calc_gpa() + gg.get_grades()
