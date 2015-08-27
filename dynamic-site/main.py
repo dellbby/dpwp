@@ -10,7 +10,7 @@ from page import
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         #instances
-        p = Content()
+        p = Everything()
         c = Clothing()
         i = Info()
 

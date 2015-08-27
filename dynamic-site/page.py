@@ -20,8 +20,18 @@ class Page(object):
                 <li><a href=></li>
             </ul>'''
 
-        self._close '''
-            <footer><HR>  Copyright 2015 © Cali Closet. </footer>
+        self._close = '''
+            <footer><HR>  Copyright 2015 - Cali Closet. </footer>
         </div>
     </body>
 </html>'''
+
+    def print_out(self):
+        return self._head + self._body + self._close
+
+class Everything(Page):
+    def __init__(self):
+        super(Everything, self).__init__()
+
+    def print_out(self):
+        return self._head + self._body + '''<h1> ''' + self.name + '''</h1>''' + '<br><b>Price:</b>' + self.price + '<br><b>Size(s) available</b>' + self.size +
