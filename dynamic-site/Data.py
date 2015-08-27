@@ -4,6 +4,17 @@ Dynamic Site
 August 26, 2015
 '''
 
+class Clothing(object):
+    def __init__(self):
+        #Attributes
+        self.name = ''
+        self.price = ''
+        self.size = ''
+        self.make = ''
+        self.color = ''
+        self.style = ''
+        self.image = ''
+
 class Data(object):
     def __init__(self):
         #data & attributes for each objects - clothing pieces with information
@@ -56,3 +67,6 @@ class Data(object):
         suit.color = 'White'
         suit.style = 'One Piece'
         suit.image = 'images/suit.png'
+
+        self.pieces = [aztec, chanel, legging, mauve, suit]
+
