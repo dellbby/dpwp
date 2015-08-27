@@ -5,17 +5,41 @@ August 26, 2015
 '''
 
 import webapp2
-from page import
+from page import Page, Everything
+from data import Clothing, Data
+
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         #instances
         p = Everything()
         c = Clothing()
-        i = Info()
+        i = Data()
 
+        if self.request.GET:
+            style = self.request.GET['style']
+            if style == '':
+                c = i.list[0]
+            if style == '':
+                c = i.list[1]
+            if style == '':
+                c = i.list[2]
+            if style == '':
+                c = i.list[3]
+            if style == '':
+                c = i.list[4]
+        else:
+            c = i.list[0]
 
+        p.name = c.name
+        p.price = c.price
+        p.size = c.size
+        p.make = c.make
+        p.color = c.color
+        p.style = c.style
+        p.image = c.image
 
+        self.response.write(p.print_out())
 
 
 

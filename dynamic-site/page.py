@@ -34,4 +34,4 @@ class Everything(Page):
         super(Everything, self).__init__()
 
     def print_out(self):
-        return self._head + self._body + '''<h1> ''' + self.name + '''</h1>''' + '<br><b>Price:</b>' + self.price + '<br><b>Size(s) available</b>' + self.size +
+        return self._head + self._body + '''<h1> ''' + self.name + '''</h1>''' + '<br><b>Price:</b>' + self.price + '<br><b>Size(s) available</b>' + self.size + '<br><b>Make</b>' + self.make + '<br><b>Color:</b>' + self.color + '<br><b>Style:</b>' + self.style +  '<img src="' + self._image + '" />' + self._close
