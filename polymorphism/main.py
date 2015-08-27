@@ -65,8 +65,6 @@ class FormPage(Page): #inheriting class Page - superclass for formpage,
 
 
 
-
-
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
 ], debug=True)
