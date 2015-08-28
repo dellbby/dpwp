@@ -17,7 +17,11 @@ class Page(object):
         self._body = '''
         <div id="container">
             <ul id ="navi">
-                <li><a href=></li>
+                <li><a href="?style=top">Aztec Crop Top</a></li>
+                <li><a href="?style=>Chanel Drip Top </a></li>
+                <li><a href="?style=legging">Striped Leggings </a></li>
+                <li><a href="?style=overlay">Mauve Top </a></li>
+                <li><a href="?style=>White Plunge One Piece Suit </a></li>
             </ul>'''
 
         self._close = '''

@@ -36,16 +36,17 @@ class Data(object):
         chanel.size = 'Small, Medium, Large'
         chanel.make = '95% Rayon, 5% Spandex'
         chanel.color = 'White & Black'
-        chanel.style = 'Muscle Tee'
+        chanel.style = 'top'
         chanel.image = 'images/chanel.png'
 
         #3.StripedLeggings
         legging = Clothing()
+        legging.name = 'Striped Leggings'
         legging.price = '$40.00'
         legging.size = 'Small, Medium, Large'
         legging.make = '95% Rayon, 5% Spandex'
         legging.color = 'White & Black'
-        legging.style = 'Legging Bottoms'
+        legging.style = 'legging'
         legging.image = 'images/legging.png'
 
         #4.MauveTop
@@ -55,7 +56,7 @@ class Data(object):
         mauve.size = 'Small, Medium, Large'
         mauve.make = '100% Polyester Chiffon'
         mauve.color = 'Creme'
-        mauve.style = 'Overlay Top'
+        mauve.style = 'overlay'
         mauve.image = 'images/mauve.png'
 
         #5.BaitingSuit

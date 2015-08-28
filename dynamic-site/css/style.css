@@ -11,6 +11,16 @@
     border:1px solid #E4E4E4;
 }
 
+#container {
+	background: #B1D7D8;
+	width: 700px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	line-height: 22px;
+	text-align: center;
+}
+
 h1{
 	text-align:center;
 	text-transform:uppercase;
