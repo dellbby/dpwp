@@ -11,6 +11,7 @@ from data import Clothing, Data
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
+
         #instances
         p = Everything()
         c = Clothing()
@@ -18,16 +19,18 @@ class MainHandler(webapp2.RequestHandler):
 
         if self.request.GET:
             style = self.request.GET['style']
-            if style == '':
+
+            if style == 'shirt':
                 c = i.pieces[0]
-            if style == '':
+            if style == 'top':
                 c = i.pieces[1]
-            if style == '':
+            if style == 'legging':
                 c = i.pieces[2]
-            if style == '':
+            if style == 'overlay':
                 c = i.pieces[3]
-            if style == '':
+            if style == 'suit':
                 c = i.pieces[4]
+        #default of what they will see
         else:
             c = i.pieces[0]
 
@@ -37,8 +40,8 @@ class MainHandler(webapp2.RequestHandler):
         p.make = c.make
         p.color = c.color
         p.style = c.style
-        p.image = c.image
-
+        p._image = c.image
+        #Print out everything
         self.response.write(p.print_out())
 
 

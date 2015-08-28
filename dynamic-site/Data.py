@@ -26,7 +26,7 @@ class Data(object):
         aztec.size = 'Small, Medium, Large'
         aztec.make = '100% Rayon'
         aztec.color = 'Mixed / Pattern'
-        aztec.style = 'Crop Top'
+        aztec.style = 'shirt'
         aztec.image = 'images/aztec.png'
 
         #2.ChanelDripTop

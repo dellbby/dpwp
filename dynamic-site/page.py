@@ -17,8 +17,8 @@ class Page(object):
         self._body = '''
         <div id="container">
             <ul id ="navi">
-                <li><a href="?style=top">Aztec Crop Top</a></li>
-                <li><a href="?style=>Chanel Drip Top </a></li>
+                <li><a href="?style=shirt">Aztec Crop Top</a></li>
+                <li><a href="?style=top>Chanel Drip Top </a></li>
                 <li><a href="?style=legging">Striped Leggings </a></li>
                 <li><a href="?style=overlay">Mauve Top </a></li>
                 <li><a href="?style=suit">White Plunge One Piece Suit </a></li>
@@ -42,6 +42,15 @@ class Everything(Page):
         self.size = ''
         self.color = ''
         self._image = ''
+
+        @property
+        def image(self):
+            pass
+
+        @image.setter
+        def image(self, new_image):
+            self._image = new_image
+
         self.make = ''
         self.style = ''
 
