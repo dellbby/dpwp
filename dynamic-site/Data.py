@@ -59,7 +59,7 @@ class Data(object):
         mauve.style = 'overlay'
         mauve.image = 'images/mauve.png'
 
-        #5.BaitingSuit
+        #5.BaitingSuits
         suit = Clothing()
         suit.name = 'White Plunge One Piece'
         suit.price = '$59.00'

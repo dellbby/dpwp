@@ -5,7 +5,7 @@ August 26, 2015
 '''
 
 import webapp2
-from page import Page, Everything
+from page import Everything
 from data import Clothing, Data
 
 
@@ -29,7 +29,7 @@ class MainHandler(webapp2.RequestHandler):
             if style == '':
                 c = i.pieces[4]
         else:
-            c = i.list[0]
+            c = i.pieces[0]
 
         p.name = c.name
         p.price = c.price
