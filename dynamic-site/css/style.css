@@ -1,19 +1,8 @@
 
-.form {
-	margin-left:auto;
-    margin-right:auto;
-    max-width: 600px;
-    background: #FFCCCC;
-    padding: 25px 15px 25px 10px;
-    font: 12px century gothic;
-    color: #888;
-    text-shadow: 1px 1px 1px #FFF;
-    border:1px solid #E4E4E4;
-}
 
 #container {
 	background: #B1D7D8;
-	width: 700px;
+	width: 830px;
 	height: 100%;
 	margin: 0 auto;
 	padding: 20px;
@@ -24,12 +13,13 @@
 h1{
 	text-align:center;
 	text-transform:uppercase;
-	font-size: 25px;
+	font-size: 55px;
 	font-weight:normal;
+	line-height:auto;
 	font-family:century gothic;
     padding: 0px 0px 0px 10px;
     display: block;
-    color: #888;
+    color: #fff;
 }
 
 h2 {
@@ -108,24 +98,37 @@ p.result {
 }
 
 
+ul {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+}
+
 a:link, a:visited, a:active{
-color:black;
-font-family:centurygothic;
-font-size:12pt;
-line-height:9pt;
-font-weight:normal;
-text-decoration:none;
-font-weight:normal;
-text-align:left;
+    color:black;
+    font-family:centurygothic;
+    font-size:12pt;
+    line-height:9pt;
+    font-weight:normal;
+    text-decoration:none;
+    font-weight:normal;
+    text-transform:uppercase;
+    text-align:left;
 }
 
 a:hover{
-font-family:centurygothic;
-font-size:13pt;
-line-height:9pt;
-color:#FFCCCC;
-font-weight:bold;
-text-decoration:none;
-font-weight:normal;
-text-align:left;
+    font-family:centurygothic;
+    font-size:13pt;
+    line-height:9pt;
+    color:black;
+    font-weight:bold;
+    text-decoration:none;
+    font-weight:normal;
+    text-align:left;
 }

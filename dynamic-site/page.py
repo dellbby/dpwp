@@ -11,21 +11,23 @@ class Page(object):
 <HTML>
     <HEAD>
         <TITLE>WELCOME TO CALICLOSET.COM</TITLE>
+        <link href="css/style.css" rel="Stylesheet" type="text/css">
     </HEAD>
 
     <BODY>'''
         self._body = '''
+        <center><img src="/images/banner.png"></center>
         <div id="container">
             <ul id ="navi">
-                <li><a href="?style=shirt">Aztec Crop Top</a></li>
-                <li><a href="?style=top">Chanel Drip Top </a></li>
-                <li><a href="?style=legging">Striped Leggings</a></li>
-                <li><a href="?style=overlay">Mauve Top </a></li>
-                <li><a href="?style=suit">White Plunge One Piece Suit </a></li>
+                <li><a href="?style=shirt">Aztec Crop Top | </a></li>
+                <li><a href="?style=top">Chanel Drip Top | </a></li>
+                <li><a href="?style=legging">Striped Leggings | </a></li>
+                <li><a href="?style=overlay">Mauve Top | </a></li>
+                <li><a href="?style=suit">White Plunge Suit</a></li>
             </ul>'''
 
         self._close = '''
-            <footer><HR>  Copyright 2015 - Cali Closet. </footer>
+            <footer><BR><BR><HR>  Copyright 2015 - Cali Closet. </footer>
         </div>
     </body>
 </html>'''
@@ -55,4 +57,4 @@ class Everything(Page):
         self.style = ''
 
     def print_out(self):
-        return self._head + self._body + '''<h1> ''' + self.name + '''</h1>''' + '<br><b>Price:</b>' + self.price + '<br><b>Size(s) available</b>' + self.size + '<br><b>Make</b>' + self.make + '<br><b>Color:</b>' + self.color + '<br><b>Style:</b>' + self.style + '<img src="' + self._image + '" />' + self._close
+        return self._head + self._body + '<BR><BR><img src="' + self._image + '" align="left"> <BR>' + '''<h1> ''' + self.name + '''</h1>''' + '<br><b>Price:</b>' + self.price + '<br><b>Size(s) available</b>' + self.size + '<br><b>Make</b>' + self.make + '<br><b>Color:</b>' + self.color + '<br><b>Style:</b>' + self.style + '<BR><BR><BR><BR><BR>' +self._close
