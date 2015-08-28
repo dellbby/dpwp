@@ -61,7 +61,7 @@ class Data(object):
 
         #5.BaitingSuits
         suit = Clothing()
-        suit.name = 'White Plunge One Piece'
+        suit.name = 'White Plunge Suit'
         suit.price = '$59.00'
         suit.size = 'Small, Medium'
         suit.make = 'N/A'

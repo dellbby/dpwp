@@ -27,7 +27,12 @@ class Page(object):
             </ul>'''
 
         self._close = '''
-            <footer><BR><BR><HR>  Copyright 2015 - Cali Closet. </footer>
+            <footer><HR>  Copyright 2015 - Cali Closet.<br>
+                    <a href=><img src="/images/fb.png"></a>
+                    <a href=><img src="/images/ig.png"></a>
+                    <a href=><img src="/images/pin.png"></a>
+                    <a href=><img src="/images/twitter.png"></a>
+             </footer>
         </div>
     </body>
 </html>'''
