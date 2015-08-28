@@ -66,7 +66,7 @@ class Data(object):
         suit.size = 'Small, Medium'
         suit.make = 'N/A'
         suit.color = 'White'
-        suit.style = 'One Piece'
+        suit.style = 'suit'
         suit.image = 'images/suit.png'
 
         self.pieces = [aztec, chanel, legging, mauve, suit]

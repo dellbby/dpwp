@@ -19,15 +19,15 @@ class MainHandler(webapp2.RequestHandler):
         if self.request.GET:
             style = self.request.GET['style']
             if style == '':
-                c = i.list[0]
+                c = i.pieces[0]
             if style == '':
-                c = i.list[1]
+                c = i.pieces[1]
             if style == '':
-                c = i.list[2]
+                c = i.pieces[2]
             if style == '':
-                c = i.list[3]
+                c = i.pieces[3]
             if style == '':
-                c = i.list[4]
+                c = i.pieces[4]
         else:
             c = i.list[0]
 
