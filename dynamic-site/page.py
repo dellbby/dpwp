@@ -18,8 +18,8 @@ class Page(object):
         <div id="container">
             <ul id ="navi">
                 <li><a href="?style=shirt">Aztec Crop Top</a></li>
-                <li><a href="?style=top>Chanel Drip Top </a></li>
-                <li><a href="?style=legging">Striped Leggings </a></li>
+                <li><a href="?style=top">Chanel Drip Top </a></li>
+                <li><a href="?style=legging">Striped Leggings</a></li>
                 <li><a href="?style=overlay">Mauve Top </a></li>
                 <li><a href="?style=suit">White Plunge One Piece Suit </a></li>
             </ul>'''
